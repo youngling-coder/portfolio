@@ -30,7 +30,7 @@ html, body {
 }
 
 body {
-    background: #e0e0e0;
+    background: white;
 }
 
 li {
@@ -179,8 +179,8 @@ header {
 
 nav, section {
     border-radius: 3vh;
-    background: #e0e0e0;
-    box-shadow:  1vw 1vh 3vw #bebebe,
+    background: #ffffff;
+    box-shadow:  1vw 1vh 3vw #d9d9d9,
                -1vw -1vh 3vw #ffffff;
 }
 
