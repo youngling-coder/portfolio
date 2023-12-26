@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   sections.forEach((slide, indx) => {
-    console.log("work");
     slide.style.transform = `translateY(${(indx) * 100}%)`;
   });
 
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Handle scrolling with the mouse wheel
   let mainSection = document.getElementsByClassName("main-section")[0];
 
-  mainSection.addEventListener('wheel', function (e) {
+  document.addEventListener('wheel', function (e) {
     if (e.deltaY > 0 && currentSectionIndex < sections.length - 1) {
       // Scrolling down
       currentSectionIndex++;

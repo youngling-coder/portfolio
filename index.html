@@ -2,139 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="X-UA-Compatible"
-        content="IE=edge" />
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dmytro Shyrokov - Welcome!</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="body-wrapper">
-        <section class="main-section">
-            <div id="home" class="section-content home">
-                <header>Hi! 👋 — My name is <span class="fgradient">Dmytro</span>, I'm a Python <span class="fgradient">developer</span> 👨🏻‍💻 located in Hamburg, DE.
-                </header>
-                <div>
-                    <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-                    <img src="https://img.shields.io/badge/vscode-007ACC?style=for-the-badge&logo=visualstudiocode">
-                    <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
-                    <img src="https://img.shields.io/badge/pyqt5-41CD52?style=for-the-badge&logo=qt&logoColor=white">
-                    <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3">
-                    <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-                    <img src="https://img.shields.io/badge/sql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-                    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
-                </div>
-            </div>
-
-            <div class="section-content" id="about">
-                <header>About me</header>
-                <div class="wrapper about">
-                    <p class="long-text">
-                        I am 19 years old Python student, currently residing in Germany and here's my developer stack:<br>
-                    </p>
-                    <table>
-                        <tr>
-                            <td class="name">Primary programming language</td>
-                            <td>Python</td>
-                        </tr>
-                        <tr>
-                            <td class="name">Secondary programming language</td>
-                            <td>JavaScript (Newbie)</td>
-                        </tr>
-                        <tr>
-                            <td class="name">Web Development</td>
-                            <td>HTML/CSS | JavaScript</td>
-                        </tr>
-                        <tr>
-                            <td class="name">Database</td>
-                            <td>SQLite | MySQL</td>
-                        </tr>
-                        <tr>
-                            <td class="name">Frameworks</td>
-                            <td>Flask | PyQt5 | Django (newbie)</td>
-                        </tr>
-                        <tr>
-                            <td class="name">Version Control</td>
-                            <td>Git</td>
-                        </tr>
-                        <tr>
-                            <td class="name">Other skills</td>
-                            <td>Developing Telegram bots using aiogram</td>
-                        </tr>
-                    </table>
-                    <p class="long-text">The information provided here may be outdated so I suggest you to contact me if you have any questions about my skills.</p>
-                </div>
-            </div>
-
-            <div class="section-content project" id="project">
-                <header>Projects & Repositories</header>
-                <p class="long-text">Here are some of my finished projects:</p>
-                <div class="wrapper">
-
-                    <ul>
-                        <li class="project">
-                            <a target="_blank" href="https://github.com/youngling-coder/GetWeather">GetWeatherBot</a> - Telegram bot to get current weather worldwide.</li>
-                        <li class="project">
-                            <a target="_blank" href="https://github.com/youngling-coder/PumpkinPlanner">Pumpkin planner</a>
-                            - Simple to-do list with all base functionality implemented. Written on Flask.</li>
-                        <li class="project">
-                            <a target="_blank" href="https://github.com/youngling-coder/ChaTTY">ChaTTY</a>
-                            - CLI chat implementation based on websockets.</li>
-                        <li class="project">
-                            <a target="_blank" href="https://github.com/youngling-coder/shooter">Shooter</a>
-                            - A simple shooter game created with PyGame.</li>
-                        <li><p class="long-text">✅ Also visit my
-                            <a target="_blank" href="https://github.com/youngling-coder">GitHub</a>
-                             page to learn more about these projects.
-                        </p></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="section-content contacts" id="contacts">
-                <header>🌐 Contacts & Socials</header>
-                <div class="wrapper">
-                    <ul>
-                        <li >
-                            <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/new-post.png"/>
-                            <a class="contact" target="_blank" href="mailto:sh.dmytro@protonmail.com">E-mail</a></li>
-                        <li>
-                            <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/telegram-app.png"/>
-                            <a class="contact" target="_blank" href="https://t.me/youngling_coder">Telegram</a></li>
-                        <li>
-                            <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/github.png"/>
-                            <a class="contact" target="_blank" href="https://github.com/youngling-coder">GitHub</a></li>
-                        <li>
-                            <img width="30" height="30" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/30/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-bold-tal-revivo.png"/>
-                            <a class="contact" target="_blank" href="https://leetcode.com/youngling-coder/">LeetCode</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <script src="js/onMenuItemClick.js"></script>
-        <section class="menu-section">
-            <ul>
+    <ul class="menu">
+        <li><a class="menu-item current" href="#home">Home</a></li>
+        <li><a class="menu-item" href="#about">About</a></li>
+    </ul>
+    <section class="main-section">
+        <div id="home" class="section-content home">
+            <h1 class="long-text">Hi! 👋 — My name is <span class="fgradient">Dmytro</span>, I'm a Python <span class="fgradient">developer</span> 👨🏻‍💻 located in Hamburg, DE.
+            </h1>
+            <ul class="contacts">
                 <li>
-                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/home.png"/>
-                    <a class="menu-item current" href="#home">Home</a></li>
+                    <a class="contact" target="_blank" href="mailto:sh.dmytro@protonmail.com">
+                        <img src="img/protonmail.svg"/>
+                    </a>
+                </li>
                 <li>
-                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/person-male.png"/>
-                    <a class="menu-item" href="#about">About</a></li>
+                    <a class="contact" target="_blank" href="https://t.me/youngling_coder">
+                        <img src="img/telegram.svg"/>
+                    </a>
+                </li>
                 <li>
-                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/project-management.png"/>
-                    <a class="menu-item" href="#project">Projects</a></li>
+                    <a class="contact" target="_blank" href="https://github.com/youngling-coder">
+                        <img  src="img/github.svg"/>
+                    </a>
+                </li>
                 <li>
-                    <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/contacts.png"/>
-                    <a class="menu-item" href="#contacts">Contact me</a></li>
+                    <a class="contact" target="_blank" href="https://leetcode.com/youngling-coder/">
+                        <img src="img/leetcode.svg"/>
+                    </a>
+                </li>
             </ul>
-        </section>
-    </div>
+        </div>
 
+        <div class="section-content" id="about">
+            <h1>About me</h1>
+
+            <div class="wrapper about">
+                <p class="long-text">
+                    I am 19 years old Python student, currently residing in Germany. I am interested in creating open-source projects and learning frameworks such as Django, Flask, PyQt5. Here're some of my technical skills:<br>
+                </p>
+
+                <table class="long-text">
+                    <tr>
+                        <td class="name">Primary programming language</td>
+                        <td class="value"><img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Secondary programming language</td>
+                        <td class="value">
+                            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Web Development</td>
+                        <td class="value">
+                            <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3">
+                            <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+                            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Database</td>
+                        <td class="value">
+                            <img src="https://img.shields.io/badge/sql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Frameworks</td>
+                        <td class="value">
+                            <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+                            <img src="https://img.shields.io/badge/pyqt5-41CD52?style=for-the-badge&logo=qt&logoColor=white">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Version Control</td>
+                        <td class="value">
+                            <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">Other skills</td>
+                        <td class="value">
+                            <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+                            <img alt="Static Badge" src="https://img.shields.io/badge/aiogram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white">
+                            <img src="https://img.shields.io/badge/vscode-007ACC?style=for-the-badge&logo=visualstudiocode">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/onMenuItemClick.js"></script>
     <footer>
-        &copy; 2023 Dmytro Shyrokov - Python Developer Portfolio
+        <h6>&copy; 2023 Dmytro Shyrokov - Python Developer Portfolio</h6>
     </footer>
 </body>
 
