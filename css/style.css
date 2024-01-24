@@ -72,13 +72,23 @@ img.logo {
     object-fit: contain;
     margin: 5%;
     border-radius: 50%;
-    animation: fade-in-zoom-out 3s forwards;
+    animation: fade-in-zoom-out 3s forwards, glowing 4s infinite;
 }
 
 @keyframes fade-in-zoom-out {
     100% {
         opacity: 1;
         transform: scale(1);
+        box-shadow: 0 0 15px 0px #0085FF;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 15px 0px #0085FF;
+    } 50% {
+        box-shadow: 0 0 15px 5px #0085FF;
+    } 100% {
         box-shadow: 0 0 15px 0px #0085FF;
     }
 }
