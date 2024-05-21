@@ -44,7 +44,7 @@ div {
     justify-content: center;
 }
 
-div.socials {
+div.socials, div.projects {
     margin-top: 5%;
     flex-direction: row;
     width: 60%;
@@ -70,9 +70,25 @@ img.logo {
     width: 250px;
     height: auto;
     object-fit: contain;
-    margin: 5%;
     border-radius: 50%;
-    animation: fade-in-zoom-out 3s forwards;
+    animation: rotating 6s infinite, fade-in-zoom-out 3s forwards, glowing 6s infinite;
+    width: 300px;
+}
+
+@keyframes rotating {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        filter: drop-shadow(0 0 15px rgba(0, 0, 255));
+    } 50% {
+        filter: drop-shadow(0 0 10px rgb(127, 127, 255));
+    } 100% {
+        filter: drop-shadow(0 0 15px rgba(0, 0, 255));
+    }
 }
 
 @keyframes fade-in-zoom-out {
@@ -87,4 +103,5 @@ footer {
     position: absolute;
     text-align: center;
     bottom: 0;
+    padding: 5px;
 }
