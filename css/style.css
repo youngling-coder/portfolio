@@ -17,7 +17,7 @@ h1 {
     overflow: hidden;
     white-space: nowrap;
     font-family: "DM Mono";
-    font-size: 2.2em;
+    font-size: 3.5vh;
     color: #ffffff;
     animation:
         typing 3.5s steps(16, end),
@@ -27,7 +27,7 @@ h1 {
 p, a {
     font-family: "Hind Madurai";
     color: rgb(255, 255, 255, 50%);
-    font-size: 1.1em;
+    font-size: 2vh;
 }
 
 html, body {
@@ -49,8 +49,8 @@ div {
     justify-content: center;
 }
 
-div.socials, div.projects {
-    margin-top: 5%;
+div.socials {
+    margin-top: 2vh;
     flex-direction: row;
     width: 60%;
     justify-content: space-evenly;
@@ -59,7 +59,7 @@ div.socials, div.projects {
     img {
         filter: invert(100%);
         opacity: .5;
-        height: 24px;
+        height: 3vh;
         transition: all .5s ease;
     }
 
@@ -71,16 +71,15 @@ div.socials, div.projects {
 
 img.logo {
     opacity: 0;
-    transform: scale(1.2);
-    width: 250px;
+    transform: scale(1.1);
     height: auto;
     object-fit: contain;
     border-radius: 50%;
+    width: 35vh;
     animation: 
         rotating 6s infinite,
-        fade-in-zoom-out 3s forwards,
+        fade-in-zoom-out 5s forwards,
         glowing 6s infinite;
-    width: 300px;
 }
 
 @keyframes typing {
@@ -101,9 +100,9 @@ img.logo {
 
 @keyframes glowing {
     from, to {
-        filter: drop-shadow(0 0 20px rgba(0, 0, 255));
+        filter: drop-shadow(0 0 2vh rgba(0, 0, 255));
     } 50% {
-        filter: drop-shadow(0 0 10px rgb(0, 0, 255));
+        filter: drop-shadow(0 0 1vh rgb(0, 0, 255));
         transform: scale(1.03);
     }
 }
@@ -120,5 +119,5 @@ footer {
     position: absolute;
     text-align: center;
     bottom: 0;
-    padding: 5px;
+    padding: 1vh;
 }
