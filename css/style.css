@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
-    user-select: none;
     margin: 0;
 }
 
@@ -14,14 +13,20 @@ section {
 }
 
 h1 {
-    font-family: "Montserrat";
+    border-right: 5px solid #0085FF;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "DM Mono";
     font-size: 2.2em;
     color: #ffffff;
+    animation:
+        typing 3.5s steps(16, end),
+        blink-caret .8s step-end infinite;
 }
 
 p, a {
     font-family: "Hind Madurai";
-    color: #8d9eac;
+    color: rgb(255, 255, 255, 50%);
     font-size: 1.1em;
 }
 
@@ -71,29 +76,40 @@ img.logo {
     height: auto;
     object-fit: contain;
     border-radius: 50%;
-    animation: rotating 6s infinite, fade-in-zoom-out 3s forwards, glowing 6s infinite;
+    animation: 
+        rotating 6s infinite,
+        fade-in-zoom-out 3s forwards,
+        glowing 6s infinite;
     width: 300px;
 }
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0085FF; }
+}
+
 @keyframes rotating {
-    100% {
+    to {
         rotate: 360deg;
     }
 }
 
 @keyframes glowing {
-    0% {
+    from, to {
         filter: drop-shadow(0 0 20px rgba(0, 0, 255));
     } 50% {
         filter: drop-shadow(0 0 10px rgb(0, 0, 255));
         transform: scale(1.03);
-    } 100% {
-        filter: drop-shadow(0 0 20px rgba(0, 0, 255));
     }
 }
 
 @keyframes fade-in-zoom-out {
-    100% {
+    to {
         opacity: 1;
         transform: scale(1);
     }
