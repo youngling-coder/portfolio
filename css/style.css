@@ -13,7 +13,7 @@ section {
 }
 
 h1 {
-    border-right: 5px solid #0085FF;
+    border-right: 1vh solid #0085FF;
     overflow: hidden;
     white-space: nowrap;
     font-family: "DM Mono";
